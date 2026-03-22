@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Portrait Reveal Animation */
+.portrait-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait-image {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  object-fit: cover;
+  z-index: 10;
+}
+
+/* Ghost Arrow for Lightbox */
+.ghost-arrow {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.ghost-arrow:hover {
+  opacity: 1;
+}
+
+/* Map Zoom Scroll */
+.map-container {
+  transition: transform 0.3s ease-out;
+}
