@@ -1,49 +1,49 @@
 # MapsGallery
 
-MapsGallery adalah aplikasi web interaktif yang dibangun menggunakan Next.js dan terintegrasi dengan Google Maps. Aplikasi ini menampilkan galeri gambar yang tersinkronisasi dengan titik lokasi (POI) di peta, termasuk dukungan Street View.
+MapsGallery is an interactive web application built using Next.js and integrated with Google Maps. This application displays an image gallery synchronized with Points of Interest (POI) on the map, including Street View support.
 
-## 🚀 Fitur Utama
-- **Integrasi Peta Interaktif**: Menampilkan titik navigasi dan POI menggunakan `@react-google-maps/api`.
-- **Street View**: Terintegrasi dengan kustomisasi Google Street View di setiap lokasi.
-- **Galeri Gambar Responsif**: Layout grid yang rapi dibantu oleh Tailwind CSS dan animasi transisi yang mulus dari Framer Motion.
-- **Download Gambar/Data**: Fitur untuk mengunduh gambar dibantu oleh `file-saver` dan `jszip`.
+## 🚀 Key Features
+- **Interactive Map Integration**: Displays navigation points and POIs using `@react-google-maps/api`.
+- **Street View**: Integrated with customized Google Street View at each location.
+- **Responsive Image Gallery**: Clean grid layout utilizing Tailwind CSS and smooth transition animations from Framer Motion.
+- **Image/Data Download**: Feature to download images supported by `file-saver` and `jszip`.
 
-## 🛠️ Teknologi yang Digunakan
-- **[Next.js 14](https://nextjs.org/)** - Framework React untuk SSR/SSG.
-- **[React 18](https://reactjs.org/)** - Library UI.
+## 🛠️ Technologies Used
+- **[Next.js 14](https://nextjs.org/)** - React framework for SSR/SSG.
+- **[React 18](https://reactjs.org/)** - UI library.
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework.
-- **[@react-google-maps/api](https://www.npmjs.com/package/@react-google-maps/api)** - Library integrasi Google Maps untuk React.
-- **[Framer Motion](https://www.framer.com/motion/)** - Library untuk animasi komponen.
-- **[Lucide React](https://lucide.dev/)** - Kumpulan icon minimalis.
+- **[@react-google-maps/api](https://www.npmjs.com/package/@react-google-maps/api)** - Google Maps integration library for React.
+- **[Framer Motion](https://www.framer.com/motion/)** - Library for component animations.
+- **[Lucide React](https://lucide.dev/)** - Collection of minimalist icons.
 
-## 📦 Instalasi & Cara Menjalankan (Lokal)
+## 📦 Installation & Running Locally
 
-1. **Pastikan berada di direktori project**
+1. **Ensure you are in the project directory**
    ```bash
    cd MapsGallery
    ```
 
-2. **Install Semua Dependensi**
+2. **Install All Dependencies**
    ```bash
    npm install
    ```
 
-3. **Atur Environment Variables**
-   Project ini membutuhkan API key Google Maps, buat file `.env` dan konfigurasikan seperti ini:
+3. **Set Up Environment Variables**
+   This project requires a Google Maps API key. Create a `.env` file and configure it like this:
    ```env
    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
    ```
 
-4. **Jalankan Development Server**
-   Project ini di-setting untuk berjalan pada port `3002`.
+4. **Run the Development Server**
+   This project is configured to run on port `3002`.
    ```bash
    npm run dev
    ```
-   Buka [http://localhost:3002](http://localhost:3002) di browser kamu untuk melihat hasilnya.
+   Open [http://localhost:3002](http://localhost:3002) in your browser to view the result.
 
-## 🚀 Build untuk Production
+## 🚀 Build for Production
 
-Untuk melihat hasil optimal (production-ready) dan mem-build Next.js app:
+To view the optimal result (production-ready) and build the Next.js app:
 
 ```bash
 npm run build
@@ -51,8 +51,8 @@ npm run start
 ```
 
 ## 🌐 Deployment (Vercel)
-Aplikasi Next.js ini sangat mudah untuk di-deploy ke Vercel:
-1. Push kodenya ke GitHub.
-2. Login ke [vercel.com](https://vercel.com) dan buat project baru dari repository GitHub.
-3. Tambahkan environment variables seperti `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` di dashboard Vercel.
-4. Klik **Deploy** dan selesai!
+This Next.js application is very easy to deploy to Vercel:
+1. Push the code to GitHub.
+2. Log in to [vercel.com](https://vercel.com) and create a new project from the GitHub repository.
+3. Add environment variables such as `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` in the Vercel dashboard.
+4. Click **Deploy** and you're done!
