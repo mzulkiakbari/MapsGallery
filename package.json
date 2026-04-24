@@ -17,7 +17,7 @@
     "framer-motion": "^11.5.4",
     "jszip": "^3.10.1",
     "lucide-react": "^0.446.0",
-    "next": "14.2.16",
+    "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.13.1",
